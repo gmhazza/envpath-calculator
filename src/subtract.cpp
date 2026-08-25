@@ -2,9 +2,17 @@
 #include <string>
 #include <stdexcept>
 
+#include "../include/help.h"
+
+
 int main(int argc, char *argv[])
 {
-    if (argc != 3) {
+    if (argc == 2) {
+        if ((argv[1] == "--help") || (argv[1] == "-h")) {
+            help::print_help_two("subtract");
+            return 0;
+        }
+    } else if (argc != 3) {
         std::cerr << "Only 2 integers are allowed. " << std::endl;
         return 1;
     }
