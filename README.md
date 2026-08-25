@@ -32,3 +32,15 @@ mingw32-make
 make
 ```
 final build will be in bin directory
+
+3. **Setting up Environment**
+* Copy a path of bin directory inside project. "C:/projects/envpath-calculator/bin"
+* Open the Advance System Settings and follow the following set of instructions
+![Advance System Settings](docs/env-var-path.JPG)
+
+4. Test
+* Open Terminal and type 
+```
+add --help
+```
+if it execute then you have successfuly installed the program
