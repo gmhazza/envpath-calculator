@@ -2,6 +2,13 @@
 #include <string>
 #include <stdexcept>
 
+/**
+ * @brief Computes a power from two command-line integer arguments and prints the result.
+ *
+ * @param argc Number of command-line arguments.
+ * @param argv Command-line arguments containing the base and repetition count.
+ * @return 0 on success; 1 if the argument count is invalid or either value cannot be converted to an integer.
+ */
 int main(int argc, char *argv[])
 {
     if (argc != 3) {
