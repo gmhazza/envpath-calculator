@@ -15,6 +15,7 @@ all: $(TARGETS)
 $(BIN_DIR)/%.exe: $(SRC_DIR)/%.cpp | $(BIN_DIR)
 	$(CXX) $(CXX_FLAGS) $< $(INCLUDE_DIR)/help.cpp -o $@
 
+
 $(BIN_DIR):
 	if not exist "$@" mkdir "$@"
 
